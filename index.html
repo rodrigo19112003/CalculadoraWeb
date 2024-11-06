@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/calculadora.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora básica</h1>
+    </header>
+    <br><br>
+    <div class="contenido">
+        <table>
+            <tr>
+                <td colspan="4"><input id="txt_resultado" type="readonly"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="b_lim" onclick="limpiar()" value="limpiar"></td>
+                <td><input type="button" id="b_bor" onclick="borrar()" value="borrar"></td>
+                <td><input type="button" id="b_par1" onclick="clickbutton(this)" value="("></td>
+                <td><input type="button" id="b_par2" onclick="clickbutton(this)" value=")"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="b07" onclick="clickbutton(this)" value="7"></td>
+                <td><input type="button" id="b08" onclick="clickbutton(this)" value="8"></td>
+                <td><input type="button" id="b09" onclick="clickbutton(this)" value="9"></td>
+                <td><input type="button" id="b_div" onclick="clickbutton(this)" value="/"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="b04" onclick="clickbutton(this)" value="4"></td>
+                <td><input type="button" id="b05" onclick="clickbutton(this)" value="5"></td>
+                <td><input type="button" id="b06" onclick="clickbutton(this)" value="6"></td>
+                <td><input type="button" id="b_mul" onclick="clickbutton(this)" value="x"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="b01" onclick="clickbutton(this)" value="1"></td>
+                <td><input type="button" id="b02" onclick="clickbutton(this)" value="2"></td>
+                <td><input type="button" id="b03" onclick="clickbutton(this)" value="3"></td>
+                <td><input type="button" id="b_res" onclick="clickbutton(this)" value="-"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="b00" onclick="clickbutton(this)" value="0"></td>
+                <td><input type="button" id="b_pun" onclick="clickbutton(this)" value="."></td>
+                <td><input type="button" id="b_sum" onclick="clickbutton(this)" value="+"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="button" id="b_ig" onclick="clickbutton(this)" value="="></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <marquee behavior="scroll" direction="left">
+            <p>Universidad Vreacruzana - Lic. en Ingeniería de Software</p>
+        </marquee>
+    </footer>
+</body>
+</html>
